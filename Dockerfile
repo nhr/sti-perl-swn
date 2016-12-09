@@ -5,6 +5,7 @@ MAINTAINER N. Harrison Ripps <nhr@zig.mx>
 USER root
 
 # Throw in a bunch of pre-built Perl module prerequisites
+RUN yum install -y yum-plugin-ovl
 RUN yum install -y rh-perl520-perl-Archive-Zip rh-perl520-perl-CGI rh-perl520-perl-Data-Dumper rh-perl520-perl-DBI rh-perl520-perl-DBD-SQLite rh-perl520-perl-PathTools gd-devel
 
 # Add Module::Install to the first pass of cpanminus based
